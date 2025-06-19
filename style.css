@@ -1,0 +1,132 @@
+/* Style général de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal */
+.conteneur {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+/* Titres */
+h1, h2 {
+  text-align: center;
+  color: #ff6600; /* Couleur orange d’Orange */
+}
+
+/* Style du formulaire */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Regroupement des champs du formulaire */
+.groupe-formulaire {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Bouton "Ajouter" */
+button[type="submit"] {
+  flex: 1 1 100%;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #e65c00;
+}
+
+/* Liste des employés */
+#listeEmployes {
+  list-style: none;
+  padding: 0;
+}
+
+/* Bloc de chaque employé */
+.employe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+/* Détails affichés */
+.details-employe {
+  flex: 1;
+}
+
+.details-employe span {
+  display: block;
+  color: #333;
+}
+
+.details-employe .nom {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* Bouton "Supprimer" */
+.bouton-supprimer {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bouton-supprimer:hover {
+  background-color: #c9302c;
+}
+
+/* Adaptation pour les petits écrans */
+@media screen and (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  .groupe-formulaire {
+    flex: 1 1 100%;
+  }
+
+  .employe {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bouton-supprimer {
+    margin-top: 10px;
+  }
+}
