@@ -2,7 +2,7 @@
 
 **Nom** : Mbosop Tetsing Steve  
 **Langages utilisés** : HTML, CSS, JavaScript (100 % natif)  
-**Temps passé** : Environ 3h30  
+**Temps passé** : Environ 2h20  
 **Date** : 19 juin 2025
 
 ## 🔧 Instructions
@@ -24,5 +24,5 @@
 ## 🎁 Bonus
 
 - Design moderne avec une touche Orange
-- Nom des variables et commentaires entièrement en français
+- documentez
 - Structure de fichiers claire et naturelle
